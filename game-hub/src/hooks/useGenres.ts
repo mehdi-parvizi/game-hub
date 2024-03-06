@@ -9,7 +9,6 @@ export interface Genre {
   name: string;
   image_background: string;
 }
-
 const useGenres = () => {
   const queryClient = useQueryClient();
   return useQuery({
