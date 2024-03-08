@@ -1,5 +1,5 @@
 import { Button, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface Props {
   children: string;
@@ -14,7 +14,7 @@ const ExpandableText = ({ children }: Props) => {
   const summary = expanded ? children : children.substring(0, limit) + `...`;
   return (
     <Text>
-      {summary}{" "}
+      {summary}
       <Button
         marginLeft={1}
         size={"xs"}
